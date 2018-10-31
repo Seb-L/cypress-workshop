@@ -1,7 +1,15 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="home p-3">
+    <h1>Workshop Cypress E2E</h1>
+    <br>
+
+    <b-button
+      :to="{ name: 'products' }"
+      variant="success"
+      data-cy="products-btn"
+    >
+      SEE PRODUCTS
+    </b-button>
   </div>
 </template>
 
