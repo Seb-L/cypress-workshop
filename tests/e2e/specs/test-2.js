@@ -1,86 +1,65 @@
 describe('Test 2', () => {
   beforeEach(() => {
-    cy.visit('/contact')
+    // Visit contact page
+
   })
 
   it('Valid form', () => {
-    cy.get('[data-cy="form-input-firstname"]')
-      .type('Firstname')
+    // Type "Firstname" in firstname input
 
-    cy.get('[data-cy="form-input-lastname"]')
-      .type('Lastname')
+    // Type "Lastname" in lastname input
 
-    cy.get('[data-cy="form-input-email"]')
-      .type('email@domain.com')
+    // Type "email@domain.com" in email input
 
-    cy.get('[data-cy="form-submit-btn"]')
-      .click()
+    // Click on submit button
 
-    cy.get('[data-cy="form-msg-success"]')
-      .should('exist')
-      .should('contain', 'The form has been submitted')
+    // Check if submit form message exists and contain "The form has been submitted"
+
   })
 
   it('Firstname required message', () => {
-    cy.get('[data-cy="form-input-lastname"]')
-      .type('Lastname')
+    // Type "Lastname" in lastname input
 
-    cy.get('[data-cy="form-input-email"]')
-      .type('email@domain.com')
+    // Type "email@domain.com" in email input
 
-    cy.get('[data-cy="form-submit-btn"]')
-      .click()
+    // Click on submit button
 
-    cy.get('[data-cy="form-input-msg-firstname"]')
-      .should('exist')
-      .should('contain', 'The firstname field is required.')
+    // Check if firstname error message exists and contain "The firstname field is required."
+
   })
 
   it('Lastname required message', () => {
-    cy.get('[data-cy="form-input-firstname"]')
-      .type('Firstname')
+    // Type "Firstname" in firstname input
 
-    cy.get('[data-cy="form-input-email"]')
-      .type('email@domain.com')
+    // Type "email@domain.com" in email input
 
-    cy.get('[data-cy="form-submit-btn"]')
-      .click()
+    // Click on submit button
 
-    cy.get('[data-cy="form-input-msg-lastname"]')
-      .should('exist')
-      .should('contain', 'The lastname field is required.')
+    // Check if lastname error message exists and contain "The lastname field is required."
+
   })
 
   it('Email required message', () => {
-    cy.get('[data-cy="form-input-firstname"]')
-      .type('Firstname')
+    // Type "Firstname" in firstname input
 
-    cy.get('[data-cy="form-input-lastname"]')
-      .type('Lastname')
+    // Type "Lastname" in lastname input
 
-    cy.get('[data-cy="form-submit-btn"]')
-      .click()
+    // Click on submit button
 
-    cy.get('[data-cy="form-input-msg-email"]')
-      .should('exist')
-      .should('contain', 'The email field is required.')
+    // Check if email error message exists and contain "The email field is required."
+
   })
 
   it('Email pattern message', () => {
-    cy.get('[data-cy="form-input-firstname"]')
-      .type('Firstname')
+    // Type "Firstname" in firstname input
 
-    cy.get('[data-cy="form-input-lastname"]')
-      .type('Lastname')
+    // Type "Lastname" in lastname input
 
-    cy.get('[data-cy="form-input-email"]')
-      .type('email')
+    // Type "email" in email input
 
-    cy.get('[data-cy="form-submit-btn"]')
-      .click()
+    // Click on submit button
 
-    cy.get('[data-cy="form-input-msg-email"]')
-      .should('exist')
-      .should('contain', 'The email field must be a valid email.')
+    // Check if submit form message exists and contain "The email field must be a valid email."
+
   })
 })
