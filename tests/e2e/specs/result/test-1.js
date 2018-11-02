@@ -15,7 +15,7 @@ describe('Test 1', () => {
     cy.get('[data-cy="addtocart-btn-1"]')
       .click()
 
-    // Check if card navigation link cointains "1" product
+    // Check if card navigation link contains "1" product
     cy.get('[data-cy="nav-cart"]')
       .should('contain', 'Cart (1)')
 

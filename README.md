@@ -36,7 +36,7 @@ After starting Cypress will listen to your files update and automatically restar
 * Click on product button
 * Check if page title contains "Products"
 * Click on first product "add to cart" button
-* Check if card navigation link cointains "1" product
+* Check if card navigation link contains "1" product
 * Click on cart navigation link
 * Check if page title contains "Cart"
 * Check if one item is in the cart
@@ -108,7 +108,7 @@ __Case email pattern:__
 * Add product 5 twice
 * Add product 1
 * Add product 6
-* Check if card navigation link cointains "1" product
+* Click on cart button
 * Remove product 2
 
 __Case 1:__

@@ -1,4 +1,4 @@
-describe('Test 2', () => {
+describe('Test 3', () => {
   beforeEach(() => {
     // Visit page product
 
@@ -10,7 +10,7 @@ describe('Test 2', () => {
 
     // Add product 6
 
-    // Check if card navigation link cointains "1" product
+    // Click on cart button
 
     // Remove product 2
 

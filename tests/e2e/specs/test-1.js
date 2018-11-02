@@ -8,7 +8,7 @@ describe('Test 1', () => {
 
     // Click on first product "add to cart" button
 
-    // Check if card navigation link cointains "1" product
+    // Check if card navigation link contains "1" product
 
     // Click on cart navigation link
 
