@@ -16,7 +16,7 @@ Clone the project locally and install dependencies:
 
 To take a look at the website, start a local dev server by typing:
 
-`yarn serve` or `npm run dev`
+`yarn serve` or `npm run serve`
 
 And visit `http://localhost:8080` in your browser.
 
@@ -119,3 +119,13 @@ __Case 2:__
 
 __Case 3:__
 * Check that "Product 5" has an amount of 2
+
+### Cypress syntax used in this test
+
+* [.visit()](https://docs.cypress.io/api/commands/visit.html#Syntax)
+* [.get()](https://docs.cypress.io/api/commands/get.html#Syntax)
+* [.click()](https://docs.cypress.io/api/commands/click.html#Syntax)
+* [.should()](https://docs.cypress.io/api/commands/should.html#Syntax)
+* [.contains()](https://docs.cypress.io/api/commands/contains.html#Syntax)
+* [.closest()](https://docs.cypress.io/api/commands/closest.html#Syntax)
+* [.find()](https://docs.cypress.io/api/commands/find.html#Syntax)
